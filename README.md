@@ -6,9 +6,7 @@ description: Backend Engineer | ByteDance
 
 #### GitHub
 
-{% hint style="info" %}
-[https://github.com/at-zhao](https://github.com/at-zhao)
-{% endhint %}
+> [https://github.com/at-zhao](https://github.com/at-zhao)
 
 #### 联系方式
 
