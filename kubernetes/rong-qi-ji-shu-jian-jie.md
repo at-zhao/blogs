@@ -81,12 +81,9 @@ int main() {
     waitpid(son_pid, 0, 0);
     printf("父进程视角下子进程的 pid: %d\n", son_pid );
     return 0;
-}
+    
+    
 ```
-
-
-
-
 
 
 
