@@ -8,4 +8,4 @@
 
 ## 容器与容器云 <a href="#container" id="container"></a>
 
-* [容器技术原理](kubernetes/rong-qi-ji-shu-jian-jie.md)
+* [容器技术原理](container/inside-container.md)
