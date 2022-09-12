@@ -6,8 +6,8 @@
 
 本文假设读者了解容器如 docker 等技术的基本概念，如不熟悉可以参考以下文章：
 
-* [https://www.redhat.com/zh/topics/containers/what-is-docker#docker-%E7%9A%84%E7%BC%BA%E7%82%B9](https://www.redhat.com/zh/topics/containers/what-is-docker#docker-%E7%9A%84%E7%BC%BA%E7%82%B9)
-* [https://security.feishu.cn/link/safety?target=https%3A%2F%2Fruanyifeng.com%2Fblog%2F2018%2F02%2Fdocker-tutorial.html\&scene=ccm\&logParams=%7B"location"%3A"ccm\_docs"%7D\&lang=zh-CN](https://security.feishu.cn/link/safety?target=https%3A%2F%2Fruanyifeng.com%2Fblog%2F2018%2F02%2Fdocker-tutorial.html\&scene=ccm\&logParams=%7B%22location%22%3A%22ccm\_docs%22%7D\&lang=zh-CN)
+* [什么是 docker ？](https://www.redhat.com/zh/topics/containers/what-is-docker#docker-%E7%9A%84%E7%BC%BA%E7%82%B9)
+* [Docker 入门教程](https://ruanyifeng.com/blog/2018/02/docker-tutorial.html)
 
 ## 实现原理
 
