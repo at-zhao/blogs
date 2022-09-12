@@ -250,7 +250,7 @@ MiB Swap:   4096.0 total,   4096.0 free,      0.0 used.   6678.7 avail Mem
 
 容器镜像其实才是真正使 docker 被广泛采用的重要原因，docker 通过镜像技术，解决了应用在部署过程中云端环境和本地环境不一致的问题，从而实现应用一次打包随处部署。
 
-<img src="../.gitbook/assets/image.png" alt="" data-size="original">
+<figure><img src="../.gitbook/assets/9bff1040-96a6-4fef-a691-5a9518d2a339.png" alt=""><figcaption></figcaption></figure>
 
 容器镜像是一个轻量、独立、含有运行某个应用所需全部软件的可执行包。
 
@@ -268,7 +268,7 @@ Docker 镜像使用的 rootfs 是由多个 “层” 组成，实现上采用了
 
 > 联合文件系统（Union File System），简称 UnionFS，是一种为 Linux、FreeBSD 和 NetBSD 操作系统设计的，把其它文件系统联合到一个联合挂载点的文件系统服务。它使用 branch 把不同文件系统的文件和目录"透明地"覆盖，形成一个单一一致的文件系统。这些 branch 或者是 read-only 的，或者是 read-write 的，所以当对这个虚拟后的联合文件系统进行写操作的时候，系统是真正写到了一个新的文件中，看起来这个虚拟后的联合文件系统是可以对任何文件进行操作的，但是其实它并没有改变原来的文件。
 
-![](https://bytedance.feishu.cn/space/api/box/stream/download/asynccode/?code=MWVhZWZlNzA3ZTdiMzMyMjM0MWViMDgyN2U3YmE5MTNfdjhjTVk1OHZ1YkY0VFpiWjh5RlplaTd0MHlkazZjUEJfVG9rZW46Ym94Y25qMVdvN1JFU3ZHdk1ySWt3anZnU3pkXzE2NjI5NzUwMTk6MTY2Mjk3ODYxOV9WNA)
+<figure><img src="../.gitbook/assets/c7c5b5f1-4892-4255-9eda-ae3080898f86.png" alt=""><figcaption></figcaption></figure>
 
 如图所示，镜像文件主要由三个部分组成：
 
