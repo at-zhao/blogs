@@ -108,7 +108,9 @@ int setns (int __fd, int __nstype)
 
 `setns`将调用进程加入现有的 Namespace ，参数 `__fd` 代表想要加入的 Namespace 的文件描述符，参数 `__nstype`代表想要加入的 Namespace类型，仅作为校验，可不传。那么问题来了，`__fd` 参数代表的 Namespace 文件描述符从哪里来呢？我们可以在进程的 /proc/\[pid]/ns 目录下找到。
 
-> 这里对 linux /proc 目录做下简单介绍。/proc 是一种虚拟文件系统，存储的是当前内核运行状态的一系列特殊文件，用户可以通过这些文件查看有关系统硬件及当前正在运行进程的信息，甚至可以通过更改其中某些文件来改变内核的运行状态。
+> 这里对 linux /proc 目录做下简单介绍。
+>
+> /proc 是一种虚拟文件系统，存储的是当前内核运行状态的一系列特殊文件，用户可以通过这些文件查看有关系统硬件及当前正在运行进程的信息，甚至可以通过更改其中某些文件来改变内核的运行状态。
 
 如，在我的机器上存在一个 ElasticSearch 容器：
 
@@ -118,7 +120,9 @@ CONTAINER ID   IMAGE                  COMMAND                  CREATED        ST
 9792ce0d17fd   elasticsearch:7.17.3   "/bin/tini -- /usr/l…"   2 months ago   Up 8 hours             es
 ```
 
-通过 `docker inspect es | grep '"Pid":'` 命令可以知道容器在宿主机上的 PID 为 2314那么我们就可以查看此容器加入的 Namespace 了
+通过 `docker inspect es | grep '"Pid":'` 命令可以知道容器在宿主机上的 PID 为 2314
+
+那么我们就可以查看此容器加入的 Namespace 了
 
 ```
 kun@kun:~$ sudo ls -l /proc/2314/ns
